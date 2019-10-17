@@ -38,13 +38,17 @@ class App extends Component {
       box: {},
       route: 'signin',
       isSignedIn: false
+      user: {
+        id: '123',
+        name: 'John',
+        password: 'cookies',
+        email: 'john@gmail.com',
+        entries: 0,
+        joined: new Date(),
+      }
     }
   }
 
-  componentDidMount() {
-    fetch('http://localhost:3000/')
-      .then(response => response.json())
-      .then(console.log)}
 
   calculateFaceLocation = (data) => {
 
